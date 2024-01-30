@@ -11,7 +11,9 @@ a {
 
 .weather-app {
   background: white;
-  max-width: 500px;
+  margin: 100px auto;
+  height: 330px;
+  width: 4000px;
   margin: 100px auto;
   padding: 30px;
   border-radius: 10px;
