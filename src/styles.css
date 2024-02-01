@@ -113,7 +113,7 @@ main {
   line-height: 20px;
   margin-bottom: 10px;
 }
-.weather-forecast-tem{
+.weather-forecast-temp{
   padding: 0 10px;
 }
 .weather-forecast-temp-min{
@@ -122,7 +122,7 @@ main {
   color: #fd0054;
   margin-top: 10px;
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 .weather-forecast-temp-max {
   text-align: center;
