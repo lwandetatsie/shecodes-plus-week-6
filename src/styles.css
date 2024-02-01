@@ -109,9 +109,14 @@ main {
 }
 .weather-forecast-temp-min{
   opacity: 0.5;
+  color: #fd0054;
+}
+.weather-forecast-temp-max{
+  color: #fd0054;
 }
 .weather-forecast-temp{
   font-size: 13px;
+
 }
 footer {
   border-top: 1px solid #f9f7fe;
