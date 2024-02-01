@@ -111,7 +111,8 @@ main {
   opacity: 0.5;
   color: #fd0054;
 }
-.weather-forecast-temp-max{
+.weather-forecast-temp-max {
+  font-weight: bold;
   color: #fd0054;
 }
 .weather-forecast-temp{
