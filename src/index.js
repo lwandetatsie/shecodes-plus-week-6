@@ -52,11 +52,18 @@ let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
 
+//forecast to call 
 function displayForecast(){
   let forecast = document.querySelector("#forecast");
-forecast.innerHTML = 
+
+  //create loop 
+ let days =["Tue", "Wed", "Thu","Fri", "Sat"] ;
+ let forecastHtml="";
+
+ days.forEach(function(day){
+forecastHtml = 
 `
-  <div class="weather-forecast-date">Thu</div>
+  <div class="weather-forecast-date">${day}</div>
   <div class="weather-forecast-icon">☁️</div>
 <div class="weather-forecast-temp">
   <span class="weather-forecast-temp-max">18°</span>
@@ -65,6 +72,8 @@ forecast.innerHTML =
 </div>
 </div>
 `;
-}
+});
+ }
+
 
 displayForecast();
