@@ -56,10 +56,7 @@ currentDateELement.innerHTML = formatDate(currentDate);
 function displayForecast(response){
 console.log(response.data);
 
-
-
-  let forecastElement = document.querySelector("#forecast");
-
+let forecastElement = document.querySelector("#forecast");
   //create loop 
  let days =["Tue", "Wed", "Thu","Fri", "Sat"] ;
  let forecastHtml="";
@@ -83,8 +80,6 @@ forecastElement.innerHTML = forecastHtml;
  }
 
 
-displayForecast();
-
 function getForecast(city) {
 
   let apiKey = "4503d48fb4e80094968o853a0b6dtf14";
@@ -94,3 +89,4 @@ function getForecast(city) {
   console.log(apiUrl);
 }
 getForecast("Paris");
+search("Paris");
