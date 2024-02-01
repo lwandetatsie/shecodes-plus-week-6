@@ -58,7 +58,7 @@ forecast.innerHTML =
   <div class="weather-forecast-date">Thu</div>
   <div class="weather-forecast-icon">☁️</div>
 <div class="weather-forecast-temp">
-  <span clas="weather-forecast-temp-max">18°</span>
+  <span class="weather-forecast-temp-max">18°</span>
   <span class="weather-forecast-temp-min">12°</span>
  </div>
 </div>
