@@ -12,7 +12,7 @@ a {
 .weather-app {
   background: white;
   margin: 100px auto;
-  max-height: 455px;
+  max-height: 440px;
   max-width: 500px;
   margin: 100px auto;
   padding: 30px;
@@ -102,6 +102,10 @@ main {
 .weather-forecast-date{
   font-size: 16px;
   color: black;
+  opacity: 0.6;
+}
+.weather-forecast-temp{
+  font-size: 13px;
 }
 footer {
   border-top: 1px solid #f9f7fe;
