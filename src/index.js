@@ -73,7 +73,8 @@ forecastHtml = forecastHtml +
 </div>
 `;
 });
+forecastElement.innerHTML = forecastHtml;
  }
 
-forecastElement.innerHTML = forecastHtml;
+
 displayForecast();
