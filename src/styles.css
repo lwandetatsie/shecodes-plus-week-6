@@ -96,9 +96,9 @@ main {
 
 .weather-forecast{
   margin-top: 30px;
-justify-content: space-around;
-display: flex;
   margin-bottom: 30px;
+  padding: 12px;
+  display: inline-block;
 }
 .weather-forecast-icon{
   width: 88px;
