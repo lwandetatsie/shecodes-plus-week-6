@@ -53,9 +53,8 @@ let currentDate = new Date();
 currentDateELement.innerHTML = formatDate(currentDate);
 
 let forecast = document.querySelector("#forecast");
-forecast.innerHTML = (  
-<div class="row">
-<div  class="col-2">
+forecast.innerHTML = 
+`
   <div class="weather-forecast-date">Thu</div>
   <div class="weather-forecast-icon">☁️</div>
 <div class="weather-forecast-temp">
@@ -64,4 +63,4 @@ forecast.innerHTML = (
  </div>
 </div>
 </div>
-);
+`;
