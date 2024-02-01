@@ -46,6 +46,11 @@ if (minutes < 10) {
   return `${day} ${hours}:${minutes}`
 }
 
+let currentDateELement = document.querySelector("#current-date");
+let currentDate = new Date();
+
+currentDateELement.innerHTML = formatDate(currentDate);
+
 function searchCity(city) {
   let apiKey = "4503d48fb4e80094968o853a0b6dtf14";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
