@@ -82,10 +82,16 @@ function displayForecast(response) {
       forecastHtml +
       `
       <div class="weather-forecast-date">Tue</div>
-      <div class="weather-forecast-icon">☁️</div>
+      <div>
+      <img src="${day.condition.icon_url}" class="weather-forecast-icon"/>
+      </div>
       <div class="weather-forecast-temp">
-      <span class="weather-forecast-temp-max">${Math.round(day.temperature.maximum)}°</span>
-      <span class="weather-forecast-temp-min">${Math.round(day.temperature.minimum)}°</span>
+      <span class="weather-forecast-temp-max">
+      ${Math.round(day.temperature.maximum)}°
+      </span>
+      <span class="weather-forecast-temp-min">
+      ${Math.round(day.temperature.minimum)}°
+      </span>
       </div>
       </div>
       </div>
@@ -103,4 +109,5 @@ searchCity("Paris");
 getForecast("Paris");
 formatDate("Paris");
 displayTemperature("Paris");
+displayForecast("Paris");
 
