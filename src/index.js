@@ -53,7 +53,11 @@ let currentDate = new Date();
 currentDateELement.innerHTML = formatDate(currentDate);
 
 //forecast to call 
-function displayForecast(){
+function displayForecast(response){
+console.log(response.data);
+
+
+
   let forecastElement = document.querySelector("#forecast");
 
   //create loop 
@@ -82,8 +86,11 @@ forecastElement.innerHTML = forecastHtml;
 displayForecast();
 
 function getForcast(city) {
+  let searchInputElement = document.querySelector("#search-input");
+  let city = searchInputElement.value;
   let apiKey = "4503d48fb4e80094968o853a0b6dtf14";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
-console.log(apiUrl);
+  axios(apiUrl).then(displayForecast);
+
+  console.log(apiUrl);
 }
-getForcast();
