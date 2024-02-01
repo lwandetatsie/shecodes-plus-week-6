@@ -16,7 +16,7 @@
   <body>
     <div class="weather-app">
       <header>
-        <form id="search-form">
+        <form id="search-form" class="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
@@ -30,14 +30,18 @@
       <main>
         <div class="current-weather">
           <div>
-            <h1 class="current-city" id="current-city">South Africa</h1>
+            <h1 class="current-city" id="current-city">
+             South Africa 
+            </h1>
             <p class="current-details">
-              <span id="current-date"></span>, moderate rain <br />
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+              <span id="current-date"></span>, moderate rain
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity">87%</strong>, Wind: <strong id="wind-speed">7.2km/h</strong>
             </p>
           </div>
           <div class="current-temperature">
-            <span class="current-temperature-icon">☀️</span
+            <span class="current-temperature-icon" id="icon">☀️</span
             ><span class="current-temperature-value" id="current-temperature"
               >24</span
             ><span class="current-temperature-unit">°C</span>
