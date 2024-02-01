@@ -95,4 +95,5 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Paris");
 getForecast("Paris");
+formatDate("Paris");
 
