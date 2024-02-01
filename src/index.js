@@ -6,7 +6,6 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
   //let timeElement = document.querySelector("#time");
-  let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
 
   cityElement.innerHTML = response.data.city;
@@ -70,6 +69,21 @@ function getForecast(city) {
   axios(apiUrl).then(displayForecast);
 }
 
+function formatDay(timeStamp){
+  let date = new Date(response.data.time * 1000);
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
+
+  return days[date.getDay];
+}
+
 function displayForecast(response) {
   console.log(response.data);
  
@@ -81,7 +95,9 @@ function displayForecast(response) {
     if (index < 6 ){    forecastHtml =
       forecastHtml +
       `
-      <div class="weather-forecast-date">Tue</div>
+      <div class="weather-forecast-date">
+      ${formatDay(day.time)}
+      </div>
       <div>
       <img src="${day.condition.icon_url}" class="weather-forecast-icon"/>
       </div>
@@ -89,11 +105,11 @@ function displayForecast(response) {
       <span class="weather-forecast-temp-max">
       ${Math.round(day.temperature.maximum)}°
       </span>
+      </div>
+      <div>
       <span class="weather-forecast-temp-min">
       ${Math.round(day.temperature.minimum)}°
       </span>
-      </div>
-      </div>
       </div>
     `;
   }
