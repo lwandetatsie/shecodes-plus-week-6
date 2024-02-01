@@ -51,3 +51,17 @@ let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
+
+let forecast = document.querySelector("#forecast");
+forecast.innerHTML = (  
+<div class="row">
+<div  class="col-2">
+  <div class="weather-forecast-date">Thu</div>
+  <div class="weather-forecast-icon">☁️</div>
+<div class="weather-forecast-temp">
+  <span clas="weather-forecast-temp-max"><strong>18°C</strong></span>
+  <span class="weather-forecast-temp-min">12°C</span>
+ </div>
+</div>
+</div>
+);
