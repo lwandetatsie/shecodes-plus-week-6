@@ -115,6 +115,7 @@ display: block;
 }
 .weather-forecast-temp{
   padding: 0 10px;
+  margin: 0 auto;
 }
 .weather-forecast-temp-min{
   text-align: center;
