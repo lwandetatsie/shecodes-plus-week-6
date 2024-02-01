@@ -121,7 +121,7 @@ display: block;
   opacity: 0.5;
   color: #fd0054;
   margin-top: 10px;
-
+display: flex;
   justify-content: center;
 }
 .weather-forecast-temp-max {
@@ -129,7 +129,7 @@ display: block;
   font-weight: bold;
   color: #fd0054;
   margin-top: 10px;
-
+display: flex;
   justify-content: center;
 }
 
@@ -140,3 +140,4 @@ footer {
 
   color: rgba(39, 33, 66, 0.4);
 }
+
