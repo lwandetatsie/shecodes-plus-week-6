@@ -104,6 +104,9 @@ main {
   color: black;
   opacity: 0.6;
 }
+.weather-forecast-temp-min{
+  opacity: 0.5;
+}
 .weather-forecast-temp{
   font-size: 13px;
 }
