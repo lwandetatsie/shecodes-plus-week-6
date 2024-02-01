@@ -109,5 +109,5 @@ searchCity("Paris");
 getForecast("Paris");
 formatDate("Paris");
 displayTemperature("Paris");
-displayForecast("Paris");
+
 
