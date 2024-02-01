@@ -127,9 +127,10 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Paris");
 getForecast("Paris");
 formatDate("Paris");
-handleSearchSubmit("");
-formatDate("");
-displayForecast("");
-formatDay("");
+handleSearchSubmit("Paris");
+formatDate("Paris");
+getForecast("Paris");
+displayForecast("Paris");
+formatDay("Paris");
 
 
