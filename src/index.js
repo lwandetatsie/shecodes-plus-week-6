@@ -85,7 +85,7 @@ forecastElement.innerHTML = forecastHtml;
 
 displayForecast();
 
-function getForcast(city) {
+function getForecast(city) {
   let searchInputElement = document.querySelector("#search-input");
   let city = searchInputElement.value;
   let apiKey = "4503d48fb4e80094968o853a0b6dtf14";
