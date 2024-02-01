@@ -54,7 +54,7 @@ currentDateELement.innerHTML = formatDate(currentDate);
 
 //forecast to call 
 function displayForecast(){
-  let forecast = document.querySelector("#forecast");
+  let forecastElement = document.querySelector("#forecast");
 
   //create loop 
  let days =["Tue", "Wed", "Thu","Fri", "Sat"] ;
